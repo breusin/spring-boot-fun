@@ -18,7 +18,7 @@ public class PropertyController {
     @Resource
     private PropertyService propertyService;
 
-    @ApiOperation(value = "Get all properties")
+    @ApiOperation(value = "Get all properties") // swagger
     @GetMapping("/properties")
     public ResponseEntity<Collection<Property>> getProperties() {
         Collection<Property> allProperties = propertyService.getAllProperties();
